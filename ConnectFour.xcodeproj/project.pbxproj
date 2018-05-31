@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		EAF8050D20A26B5700C4B2F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF8050C20A26B5700C4B2F4 /* AppDelegate.swift */; };
-		EAF8050F20A26B5700C4B2F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF8050E20A26B5700C4B2F4 /* ViewController.swift */; };
 		EAF8051220A26B5700C4B2F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF8051020A26B5700C4B2F4 /* Main.storyboard */; };
 		EAF8051420A26B5800C4B2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAF8051320A26B5800C4B2F4 /* Assets.xcassets */; };
 		EAF8051720A26B5800C4B2F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF8051520A26B5800C4B2F4 /* LaunchScreen.storyboard */; };
+		EAF8052020A26BE100C4B2F4 /* ConnetFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF8051F20A26BE100C4B2F4 /* ConnetFour.swift */; };
+		EAF8052320A26C2E00C4B2F4 /* TubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF8052120A26C2E00C4B2F4 /* TubeView.swift */; };
+		EAF8052420A26C2E00C4B2F4 /* ConnectFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF8052220A26C2E00C4B2F4 /* ConnectFourViewController.swift */; };
+		EAF8052920A2704A00C4B2F4 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF8052820A2704A00C4B2F4 /* NewGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EAF8050920A26B5700C4B2F4 /* ConnectFour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectFour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF8050C20A26B5700C4B2F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAF8050E20A26B5700C4B2F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EAF8051120A26B5700C4B2F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAF8051320A26B5800C4B2F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAF8051620A26B5800C4B2F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAF8051820A26B5800C4B2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF8051F20A26BE100C4B2F4 /* ConnetFour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnetFour.swift; sourceTree = "<group>"; };
+		EAF8052120A26C2E00C4B2F4 /* TubeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TubeView.swift; sourceTree = "<group>"; };
+		EAF8052220A26C2E00C4B2F4 /* ConnectFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectFourViewController.swift; sourceTree = "<group>"; };
+		EAF8052820A2704A00C4B2F4 /* NewGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		EAF8050B20A26B5700C4B2F4 /* ConnectFour */ = {
 			isa = PBXGroup;
 			children = (
-				EAF8050C20A26B5700C4B2F4 /* AppDelegate.swift */,
-				EAF8050E20A26B5700C4B2F4 /* ViewController.swift */,
-				EAF8051020A26B5700C4B2F4 /* Main.storyboard */,
-				EAF8051320A26B5800C4B2F4 /* Assets.xcassets */,
-				EAF8051520A26B5800C4B2F4 /* LaunchScreen.storyboard */,
+				EAF8052720A26C7400C4B2F4 /* Model */,
+				EAF8052620A26C6700C4B2F4 /* Views */,
+				EAF8052520A26C5E00C4B2F4 /* View Controllers */,
+				EAF8051E20A26B8300C4B2F4 /* Supporting Files */,
 				EAF8051820A26B5800C4B2F4 /* Info.plist */,
 			);
 			path = ConnectFour;
+			sourceTree = "<group>";
+		};
+		EAF8051E20A26B8300C4B2F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAF8050C20A26B5700C4B2F4 /* AppDelegate.swift */,
+				EAF8051320A26B5800C4B2F4 /* Assets.xcassets */,
+				EAF8051520A26B5800C4B2F4 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAF8052520A26C5E00C4B2F4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EAF8052220A26C2E00C4B2F4 /* ConnectFourViewController.swift */,
+				EAF8052820A2704A00C4B2F4 /* NewGameViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EAF8052620A26C6700C4B2F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAF8051020A26B5700C4B2F4 /* Main.storyboard */,
+				EAF8052120A26C2E00C4B2F4 /* TubeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EAF8052720A26C7400C4B2F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAF8051F20A26BE100C4B2F4 /* ConnetFour.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAF8050F20A26B5700C4B2F4 /* ViewController.swift in Sources */,
+				EAF8052320A26C2E00C4B2F4 /* TubeView.swift in Sources */,
+				EAF8052020A26BE100C4B2F4 /* ConnetFour.swift in Sources */,
+				EAF8052920A2704A00C4B2F4 /* NewGameViewController.swift in Sources */,
+				EAF8052420A26C2E00C4B2F4 /* ConnectFourViewController.swift in Sources */,
 				EAF8050D20A26B5700C4B2F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
